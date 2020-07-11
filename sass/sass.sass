@@ -1,0 +1,343 @@
+$txt_col:  #979797
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+a
+  text-decoration: none
+.promo
+  max-width: 1200px
+  height: 100%
+  margin: 0 auto
+html
+  // overflow-x: hidden
+.orange_btn
+  font-size: 15px
+  font-weight: bold
+  padding: 20px
+  border: none
+  color: #fff
+  background-color: #ff6f56
+  outline: none
+  &:hover
+    transition: border-radius 3s, border 2s
+    border-radius: 30px
+    border: 3px solid #d44300
+  &:active
+    background-color: #ff2f2f
+    transition: background-color 2s .0s
+.sharp,.bracket,.div1,.div2,.tag
+  position: absolute
+  color: #f53a91
+  font-weight: 700
+  font-size: 28px
+  
+.white_btn
+        font-size: 15px
+        font-weight: bold
+        z-index: 4
+        color: #ff6f56
+        margin-left: 40px
+        padding: 10px
+        border: 1px solid #ff6f56
+        &:hover
+          color: #fff
+          background-color: #ff6f56
+          transition: color 0.6s,background-color 1.5s
+.myself
+  z-index: -3
+  .menu
+    height: 100px
+    align-items: center
+    display: flex
+    justify-content: space-around
+    .nav
+      a
+        text-decoration: none
+        color: #000
+        margin-left: 20px
+        &:hover
+          text-decoration: underline
+          color: #ff6f56
+      display: flex
+      justify-content: space-between
+    .call_me
+      display: flex
+      justify-content: space-between
+      a
+        text-decoration: none
+        font-size: 20px
+  .main_photo_cont
+    display: flex
+    padding: 50px 0 50px 40px
+    .main_name
+      margin: 0 auto
+      text-align: center
+      width: 50%
+      h1
+        position: relative
+        font-size: 50px
+        font-weight: bold
+        font-family: 
+        .bracket
+          left: -125px
+          top: -120px
+        .bracket_1
+          transform: rotate(15deg) translate(120px,100px)
+          transition: rotate 2s , translate 6s
+        .div1
+          right: -100px
+          top: -260px
+        .div1_1
+          transform: rotate(-10deg) translate(-30px,200px)
+          transition: rotate 2s , translate 6s
+        
+      .diskr
+        position: relative
+        padding: 40px 0
+        color: #979797
+        .div2
+          right: -800px
+          bottom: 0 
+        .div2_1
+          transform: rotate(30deg) translate(-600px,400px)
+          transition: rotate 2s ease , translate 6s ease
+        .tag
+          bottom: -500px
+          left: -200px
+        .tag_1
+          transform: rotate(-20deg) translate(400px,-400px)
+          transition: rotate 2s , translate 6s ease
+        .sharp
+          left: -250px
+          bottom: 130px
+          font-size: 32px
+        .sharp_1
+          transform: rotate(10deg) translate(400px,50px)
+          transition: transform 2s 
+      
+    .main_photo
+      width: 50%
+      padding: 5% 0 0 20%
+      .my_photo_bg
+        z-index: -2
+        position: relative
+        // left: 50%
+        // top: 150px
+        height: 500px
+        width: 500px
+        // width: 100%
+        // height: 100%
+        border-radius: 200px 100px
+        background: linear-gradient( to right, #ee347b,#df6f00af)
+        transform: rotate(45deg)
+        img
+          position: absolute
+          bottom: 150px
+          left: -170px
+          // margin: 0 20% 20% 0
+          z-index: -1
+          transform: rotate(-45deg)
+section.second
+  padding: 40px 0 0 0
+  height: 650px
+  // height: 1000px
+  width: 100%
+  margin: -300px 0
+  background-color: #f3f3f3
+
+  .promo
+    h2
+      text-align: center
+      font-weight: bold
+      font-size: 40px
+    .cont_skills
+      margin-top: 10px
+      display: flex
+      justify-content: space-between
+      .skill_item
+        z-index: 5
+        width: 250px
+        text-align: center
+        display: flex
+        flex-direction: column
+        align-items: center
+        img
+          margin: 30px 0 10px 0
+          width: 50px
+        p
+          color: $txt_col
+          width: 100%
+    .orange_btn
+      display: block
+      width: 150px
+      margin: 50px auto 0 auto
+      &:hover
+        width: 250px
+        transition: width 1s,border-radius 1s, border 1s
+section.my_work
+  padding: 50px 0
+  height: 500px
+  background-color: #f3f3f3
+  .promo
+    h2
+      text-align: center
+      font-weight: bold
+      font-size: 40px
+      margin-bottom: 20px
+    .slider
+      position: relative
+      display: flex
+      justify-content: space-between
+      flex-wrap: nowrap
+      .arrow
+        &:hover
+          border: 2px solid #77e2fd
+        &:active
+          transform: scale(0.85)
+        &:active:last-child
+          transform: scale(0.85) rotate(180deg)
+      .slide
+        flex-grow: 0.3
+        flex-basis: 350px
+        a
+          background-color: #fff
+          display: flex
+          
+          
+          flex-direction: column
+          align-items: center
+          text-align: center
+          height: 100%
+          width: 100%
+          img
+            height: 150px
+            width: 100%
+          p
+            margin-top: 10px
+            color: $txt_col
+        padding: 0 20px
+        width: 350px
+        height: 200px
+      .no_visible
+        display: none
+    .orange_btn
+      width: 150px
+      margin: 40px auto
+      display: block
+  .arrow
+    cursor: w-resize
+    border-radius: 50px
+    position: absolute
+    &:first-child
+      box-shadow: 0 -5px 25px 0px #777676
+      left: -30px
+      top: 25%
+    &:last-child
+      box-shadow: 0 5px 25px 0px #777676
+      right: -30px
+      top: 25%
+      transform: rotate(180deg)
+.adaptation
+  background: linear-gradient( to left, #ee347b,#df6f00af)
+  width: 100%
+  height: 250px
+
+  &__block
+    position: relative
+    text-align: center
+  &-title
+    padding: 50px 0 40px 0
+    color:#fff
+    font-size: 30px
+    font-weight: bold
+  &-sites
+    color:#fff
+    font-size: 23px
+  &-only
+    margin: 20px 0 40px 0
+    padding-left: 50px
+    color:#fff
+    font-size: 15px
+  .bracket,.div1,.sharp,.div2
+    color: #f5dc00
+    transform: rotate(20deg)
+  .bracket
+    left: 150px
+    bottom: 30px
+  .div1
+    bottom: 30px
+    right: 100px
+  .sharp
+    transform: rotate(-10deg)
+    right: 70px
+    top: 100px
+  .div2
+    top: 100px
+    left: -40px
+    transform: rotate(-15deg)
+.kontakts
+  display: flex
+  justify-content: space-around
+  padding: 40px 0
+  &__block1
+    p
+      color: $txt_col
+      font-size: 15px
+  &__block2
+    .sprite
+      width: 25px
+      height: 25px
+      background: url("../icons/sprite.png")
+      
+    .tel,.mail
+      display: flex
+      a
+        margin-left: 15px
+    .tel
+      .sprite
+        background-position: 0 0
+    .mail
+      .sprite
+        background-position: -37px 0 
+      margin-top: 15px
+      
+  &__block3
+    .white_btn
+      margin-left: 90px
+    .sprite
+      width: 55px
+      height: 55px
+      background: url("../icons/sprite.png")
+    .messenger
+      padding: 30px 0
+      display: flex
+      .kontakts-item
+        margin-right: 10px
+      .messenger-1
+        .sprite
+          background-position: -75px 0 
+      .messenger-2
+        .sprite
+          background-position: -135px 0
+      .messenger-3
+        .sprite
+          background-position: -200px 0
+      .messenger-4
+        .sprite
+          background-position: -260px 0 
+      .messenger-5
+        .sprite
+          background-position: -313px 0
+.madewith
+  background-color: #c5610e
+  height: 70px
+  justify-content: center
+  display: flex
+  align-items: center
+  &__item
+    p
+      color: #fff
+      font-size: 20px
+      font-weight: bold
+      font-family: serif
